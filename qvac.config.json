@@ -8,11 +8,11 @@
         "preload": true,
         "config": {
           "ctx_size": 512,
-          "predict": 150,
-          "temp": 0.7,
-          "top_k": 20,
-          "top_p": 0.9,
-          "system_prompt": "Be extremely concise. Reply in 1 sentence max. No explanations."
+          "predict": 100,
+          "temp": 0.3,
+          "top_k": 15,
+          "top_p": 0.85,
+          "system_prompt": "You are a blockchain forensics expert. NEVER show thinking. NEVER use tags. Reply in 2 sentences MAX. Be concise and direct. Output ONLY your answer."
         }
       }
     }
