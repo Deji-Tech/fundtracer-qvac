@@ -1,6 +1,6 @@
 FROM node:20-slim
 
-# Install minimal Vulkan (libvulkan1 pulls in needed deps)
+# Install minimal Vulkan
 RUN apt-get update && apt-get install -y \
     libvulkan1 \
     && rm -rf /var/lib/apt/lists/*
