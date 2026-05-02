@@ -2,13 +2,17 @@
   "serve": {
     "models": {
       "fundtracer-llm": {
-        "model": "QWEN3_600M_INST_Q4",
+        "src": "/root/.qvac/models/Qwen3-0.6B-Q2_K.gguf",
+        "type": "llm",
+        "default": true,
+        "preload": true,
         "config": {
-          "ctx_size": 256,
-          "predict": 32,
+          "ctx_size": 512,
+          "predict": 150,
           "temp": 0.7,
           "top_k": 20,
-          "top_p": 0.9
+          "top_p": 0.9,
+          "no_mmap": true
         }
       }
     }
