@@ -19,4 +19,5 @@ RUN mkdir -p /root/.qvac/models && \
 
 EXPOSE 11434
 
-CMD ["npx", "qvac", "serve", "openai", "--config", "qvac.config.json", "--port", "11434", "--host", "0.0.0.0", "--cors"]
+# Use Railway's PORT env var
+CMD ["npx", "qvac", "serve", "openai", "--config", "qvac.config.json", "--port", "${PORT:-11434}", "--host", "0.0.0.0", "--cors"]
