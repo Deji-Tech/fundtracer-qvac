@@ -1,8 +1,9 @@
 FROM node:20-slim
 
-# Install minimal Vulkan
+# Install required libraries for QVAC
 RUN apt-get update && apt-get install -y \
     libvulkan1 \
+    libatomic1 \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
