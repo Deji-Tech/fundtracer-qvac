@@ -2,12 +2,12 @@
   "serve": {
     "models": {
       "fundtracer-llm": {
-        "model": "QWEN3_600M_INST_Q4",
+        "src": "/root/.qvac/models/Qwen3-0.6B-Q4_0.gguf",
+        "type": "llamacpp-completion",
         "default": true,
         "preload": true,
         "config": {
-          "ctx_size": 4096,
-          "device": "cpu"
+          "ctx_size": 4096
         }
       }
     }
