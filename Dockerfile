@@ -12,8 +12,8 @@ COPY package.json qvac.config.json ./
 RUN npm install
 
 RUN mkdir -p /root/.qvac/models && \
-    curl -L -o /root/.qvac/models/Qwen3-0.6B-Q4_0.gguf \
-    "https://huggingface.co/bartowski/Qwen_Qwen3-0.6B-GGUF/resolve/main/Qwen_Qwen3-0.6B-Q4_0.gguf"
+    curl -L -o /root/.qvac/models/Qwen2.5-1.5B-Instruct-Q4_0.gguf \
+    "https://huggingface.co/bartowski/Qwen2.5-1.5B-Instruct-GGUF/resolve/main/Qwen2.5-1.5B-Instruct-Q4_0.gguf"
 
 EXPOSE 8080
 

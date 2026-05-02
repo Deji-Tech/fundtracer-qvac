@@ -2,7 +2,7 @@
   "serve": {
     "models": {
       "fundtracer-llm": {
-        "src": "/root/.qvac/models/Qwen3-0.6B-Q4_0.gguf",
+        "src": "/root/.qvac/models/Qwen2.5-1.5B-Instruct-Q4_0.gguf",
         "type": "llm",
         "default": true,
         "preload": true,
