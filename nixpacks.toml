@@ -1,0 +1,6 @@
+[build]
+buildCommand = "npm install --omit=dev && echo 'Install complete'"
+startCommand = "npm start"
+
+[build.node]
+version = "20"
