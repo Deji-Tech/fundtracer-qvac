@@ -1,10 +1,8 @@
 FROM node:20-slim
 
-# Install Vulkan + Mesa CPU drivers for software rendering (llvmpipe)
+# Install minimal Vulkan (libvulkan1 pulls in needed deps)
 RUN apt-get update && apt-get install -y \
     libvulkan1 \
-    mesa-vulkan-drivers \
-    libglx-mesa0 \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
