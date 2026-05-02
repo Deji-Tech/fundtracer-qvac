@@ -3,7 +3,7 @@
     "models": {
       "fundtracer-llm": {
         "src": "/root/.qvac/models/Qwen3-0.6B-Q4_0.gguf",
-        "type": "llamacpp-completion",
+        "type": "llm",
         "default": true,
         "preload": true,
         "config": {
