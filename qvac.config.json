@@ -1,14 +1,7 @@
 {
   "serve": {
     "models": {
-      "fundtracer-llm": {
-        "model": "QWEN3_600M_INST_Q4",
-        "default": true,
-        "preload": true,
-        "config": {
-          "ctx_size": 4096
-        }
-      }
+      "fundtracer-llm": "QWEN3_600M_INST_Q4"
     }
   }
 }
