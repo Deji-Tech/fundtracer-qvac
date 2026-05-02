@@ -1,6 +1,6 @@
 FROM node:20-slim
 
-# Install required libraries for QVAC
+# Install required libraries
 RUN apt-get update && apt-get install -y \
     libvulkan1 \
     libatomic1 \
@@ -9,6 +9,9 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 COPY package.json qvac.config.json ./
 RUN npm install
+
+# Pre-download the model at build time for instant startup
+RUN npx qvac pull QWEN3_600M_INST_Q4
 
 EXPOSE 11434
 

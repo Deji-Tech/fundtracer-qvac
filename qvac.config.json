@@ -6,7 +6,8 @@
         "default": true,
         "preload": true,
         "config": {
-          "ctx_size": 4096
+          "ctx_size": 4096,
+          "device": "cpu"
         }
       }
     }
