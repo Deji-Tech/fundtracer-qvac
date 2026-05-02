@@ -7,12 +7,12 @@
         "default": true,
         "preload": true,
         "config": {
-          "ctx_size": 256,
-          "predict": 80,
+          "ctx_size": 512,
+          "predict": 150,
           "temp": 0.7,
           "top_k": 20,
           "top_p": 0.9,
-          "system_prompt": "Be concise. Never show thinking tokens. Just answer directly."
+          "system_prompt": "Be extremely concise. Reply in 1 sentence max. No explanations."
         }
       }
     }
