@@ -7,12 +7,13 @@
         "default": true,
         "preload": true,
         "config": {
-          "ctx_size": 512,
-          "predict": 150,
+          "ctx_size": 256,
+          "predict": 80,
           "temp": 0.7,
           "top_k": 20,
           "top_p": 0.9,
-          "no_mmap": true
+          "no_mmap": true,
+          "verbosity": 1
         }
       }
     }

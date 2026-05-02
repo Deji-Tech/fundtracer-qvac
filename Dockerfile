@@ -17,4 +17,4 @@ RUN mkdir -p /root/.qvac/models && \
 
 EXPOSE 8080
 
-CMD ["node", "node_modules/.bin/qvac", "serve", "openai", "--config", "qvac.config.json", "--port", "8080", "--host", "0.0.0.0", "--cors", "--verbose"]
+CMD ["node", "node_modules/.bin/qvac", "serve", "openai", "--config", "qvac.config.json", "--port", "8080", "--host", "0.0.0.0", "--cors", "--verbose", "--threads", "4"]
