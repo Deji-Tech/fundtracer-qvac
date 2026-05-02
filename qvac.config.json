@@ -1,7 +1,16 @@
 {
   "serve": {
     "models": {
-      "fundtracer-llm": "QWEN3_600M_INST_Q4"
+      "fundtracer-llm": {
+        "model": "QWEN3_600M_INST_Q4",
+        "config": {
+          "ctx_size": 256,
+          "predict": 32,
+          "temp": 0.7,
+          "top_k": 20,
+          "top_p": 0.9
+        }
+      }
     }
   }
 }
