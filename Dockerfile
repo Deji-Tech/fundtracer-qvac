@@ -19,4 +19,5 @@ RUN mkdir -p /root/.qvac/models && \
 
 EXPOSE 11434
 
-CMD ["npx", "qvac", "serve", "openai", "--config", "qvac.config.json", "--port", "$PORT", "--host", "0.0.0.0", "--cors"]
+# Use shell to read PORT env var
+CMD sh -c "npx qvac serve openai --config qvac.config.json --port $PORT --host 0.0.0.0 --cors"
