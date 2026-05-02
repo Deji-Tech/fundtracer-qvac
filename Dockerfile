@@ -19,5 +19,5 @@ RUN mkdir -p /root/.qvac/models && \
 
 EXPOSE 8080
 
-# Use port 8080 (Railway default)
-CMD sh -c "npx qvac serve openai --config qvac.config.json --port 8080 --host 0.0.0.0 --cors"
+# Use $PORT from Railway env
+CMD npm start
