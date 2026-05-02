@@ -11,7 +11,8 @@
           "predict": 80,
           "temp": 0.7,
           "top_k": 20,
-          "top_p": 0.9
+          "top_p": 0.9,
+          "system_prompt": "Be concise. Never show thinking tokens. Just answer directly."
         }
       }
     }
